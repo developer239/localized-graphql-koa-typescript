@@ -1,0 +1,9 @@
+import Knex from 'knex'
+
+exports.up = (knex: Knex) =>
+  knex.schema
+
+
+exports.down = (knex: Knex) =>
+  knex.schema
+

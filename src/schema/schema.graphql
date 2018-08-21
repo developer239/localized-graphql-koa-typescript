@@ -1,0 +1,41 @@
+# Knex timestamp.
+scalar Timestamp
+
+type Page {
+  id: ID!
+  isPublic: Boolean
+  title: String!
+  slug: String!
+  text: String
+  createdAt: Timestamp!
+  updatedAt: Timestamp!
+  parent: Page
+}
+
+type Query {
+  page(id: ID!): Page!
+  pages: [Page!]
+}
+
+# You have to include ID if you are adding translation to existing page
+input CreatePageInput {
+  id: ID
+  isPublic: Boolean
+  title: String!
+  text: String!
+  parentId: ID
+}
+
+input UpdatePageInput {
+  id: ID!
+  isPublic: Boolean
+  title: String!
+  text: String!
+  parentId: ID
+}
+
+type Mutation {
+  createPage(input: CreatePageInput, languageCode: String!): Page!
+  updatePage(input: UpdatePageInput, languageCode: String!): Page!
+  deletePage(id: ID!, languageCode: String!): Page
+}

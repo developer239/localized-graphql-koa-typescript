@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "baseUrl": ".",
+    "noEmit": true,
+    "pretty": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "module": "commonjs",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "skipLibCheck": true,
+    "rootDirs": [
+      "node_modules",
+      "src"
+    ],
+    "paths": {
+      "~/*" : ["src/*"],
+      "~test/*" : ["__tests__/*"],
+      "~mock/*" : ["__mocks__/*"]
+    }
+  },
+  "include": [
+    "src/**/*",
+    "__tests__/**/*"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "quiet": true,
+  "watch": [
+    "src",
+    "package-lock.json"
+  ],
+  "events": {
+    "restart": "echo '\\x1b[36mrestarting...\\x1b[0m'"
+  },
+  "ext": "js json ts",
+  "delay": "100"
+}

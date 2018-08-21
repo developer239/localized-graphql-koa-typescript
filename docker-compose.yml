@@ -1,0 +1,31 @@
+version: '3.7'
+services:
+  app:
+    container_name: graphql_koa_typescript
+    build: .
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/usr/app
+      - node_modules:/usr/app/node_modules
+    depends_on:
+      - dbPostgres
+      - dbPostgresTest
+    links:
+      - dbPostgres
+  dbPostgres:
+    env_file:
+      - .env.development
+    image: postgres
+    restart: always
+    ports:
+      - 5432:5432
+  dbPostgresTest:
+    env_file:
+      - .env.test
+    image: postgres
+    restart: always
+    ports:
+      - 5433:5432
+volumes:
+  node_modules:

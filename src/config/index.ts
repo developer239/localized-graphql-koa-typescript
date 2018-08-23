@@ -25,10 +25,10 @@ interface IConfig {
 const config: IConfig = {
   database: {
     sql: {
-      host: process.env.DATABASE_HOST!,
-      name: process.env.POSTGRES_DB!,
-      password: process.env.POSTGRES_PASSWORD!,
-      user: process.env.POSTGRES_USER!,
+      host: process.env.DATABASE_HOST! || 'localhost',
+      name: process.env.POSTGRES_DB! || 'graphql_db',
+      password: process.env.POSTGRES_PASSWORD! || '',
+      user: process.env.POSTGRES_USER! || 'root',
     },
   },
   server: {

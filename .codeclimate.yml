@@ -1,0 +1,6 @@
+exclude_patterns:
+- "__mocks__"
+- "__tests__"
+- "src/database/sql/seeds"
+- "src/database/sql/models"
+- "src/types.ts"

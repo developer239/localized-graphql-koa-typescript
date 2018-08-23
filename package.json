@@ -7,13 +7,15 @@
   },
   "license": "MIT",
   "scripts": {
-    "build": "rm -rf build && node_modules/.bin/babel src --out-dir build --extensions '.js,.ts'",
+    "build": "rm -rf build && node_modules/.bin/babel src --out-dir build --copy-files --extensions '.js,.ts'",
     "dev": "node_modules/.bin/nodemon --exec \"node_modules/.bin/babel-node --extensions '.js,.ts' src/index.ts\"",
     "db:migrate": "node_modules/.bin/knex migrate:latest",
     "db:rollback": "node_modules/.bin/knex migrate:rollback",
     "db:seed": "node_modules/.bin/knex seed:run",
     "test": "node_modules/.bin/jest -i --forceExit --detectOpenHandles",
-    "test:coverage": "node_modules/.bin/jest -i --forceExit --detectOpenHandles --coverage"
+    "test:coverage": "node_modules/.bin/jest -i --forceExit --detectOpenHandles --coverage",
+    "heroku-postbuild": "npm run build && npm run db:rollback && npm run db:migrate && npm run db:seed",
+    "prod": "node build"
   },
   "type-check": "tsc",
   "lint-staged": {

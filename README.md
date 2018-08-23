@@ -4,6 +4,10 @@
 
 Example boilerplate for you next GraphQl NodeJs server. Part of the project setup is from [petrhanak/backend-typescript-boilerplate](https://github.com/petrhanak/backend-typescript-boilerplate).
 
+**Demo** 
+
+You can try the application [here](https://localized-graphql-koa-ts.herokuapp.com/playground) (it might take a while before the free server wakes up)
+
 **With Multiple Languages** 🌍
 
 By default all queries return data in english. If you want to request different translation then you have to send language code in http header:

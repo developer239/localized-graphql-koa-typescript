@@ -17,7 +17,6 @@ type Query {
   pages: [Page!]
 }
 
-# You have to include ID if you are adding translation to existing page
 input CreatePageInput {
   id: ID
   isPublic: Boolean
@@ -27,9 +26,10 @@ input CreatePageInput {
 }
 
 input UpdatePageInput {
-  id: ID!
+  id: ID
   isPublic: Boolean
   title: String!
+  slug: String!
   text: String!
   parentId: ID
 }

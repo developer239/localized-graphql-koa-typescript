@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/developer239/localized-graphql-koa-typescript.svg?style=svg)](https://circleci.com/gh/developer239/localized-graphql-koa-typescript) [![Test Coverage](https://api.codeclimate.com/v1/badges/fbebbe4d9b9503c0b4b6/test_coverage)](https://codeclimate.com/github/developer239/localized-graphql-koa-typescript/test_coverage) [![Maintainability](https://api.codeclimate.com/v1/badges/fbebbe4d9b9503c0b4b6/maintainability)](https://codeclimate.com/github/developer239/localized-graphql-koa-typescript/maintainability)
+
 # Localized GraphQl Koa TypeScript
 
 Example boilerplate for you next GraphQl NodeJs server. Part of the project setup is from [petrhanak/backend-typescript-boilerplate](https://github.com/petrhanak/backend-typescript-boilerplate).

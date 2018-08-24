@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "build": "rm -rf build && node_modules/.bin/babel src --out-dir build --copy-files --extensions '.js,.ts'",
-    "dev": "node_modules/.bin/nodemon --exec \"node_modules/.bin/babel-node --extensions '.js,.ts' src/index.ts\"",
+    "dev": "node_modules/.bin/nodemon -L --exec \"node_modules/.bin/babel-node --extensions '.js,.ts' src/index.ts\"",
     "db:migrate": "node_modules/.bin/knex migrate:latest",
     "db:rollback": "node_modules/.bin/knex migrate:rollback",
     "db:seed": "node_modules/.bin/knex seed:run",

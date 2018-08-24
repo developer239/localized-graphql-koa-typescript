@@ -35,7 +35,7 @@ input UpdatePageInput {
 }
 
 type Mutation {
-  createPage(input: CreatePageInput, languageCode: String!): Page!
-  updatePage(input: UpdatePageInput, languageCode: String!): Page!
+  createPage(input: CreatePageInput!, languageCode: String!): Page!
+  updatePage(input: UpdatePageInput!, languageCode: String!): Page!
   deletePage(id: ID!, languageCode: String!): Page
 }

@@ -14,25 +14,38 @@ jobs:
           POSTGRES_USER: root
           POSTGRES_PASSWORD: secretPassword
           POSTGRES_DB: graphql_db
-
-    working_directory: ~/repo
-
     steps:
       - checkout
       - restore_cache:
           name: Restore Yarn Package Cache
           keys:
             - yarn-packages-{{ checksum "yarn.lock" }}
-      - run: sudo apt-get update
-      - run: sudo apt-get install postgresql-client
+      - run:
+          name: apt-get Update And Installs
+          command: |
+            sudo apt-get update
+            sudo apt-get install postgresql-client
       - run:
           name: Setup Dependencies
           command: yarn install
+      - run:
+          name: Setup Code Climate test-reporter
+          command: |
+            curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+            chmod +x ./cc-test-reporter
       - save_cache:
           name: Save Yarn Package Cache
           key: yarn-packages-{{ checksum "yarn.lock" }}
           paths:
             - ~/.cache/yarn
-      - run: npm run db:rollback
-      - run: npm run db:migrate
-      - run: npm run test
+      - run:
+          name: Prepare Database
+          command: |
+            npm run db:rollback
+            npm run db:migrate
+      - run:
+          name: Run Test and Coverage
+          command: |
+            ./cc-test-reporter before-build
+            npm test -- --coverage
+            ./cc-test-reporter after-build --exit-code $?

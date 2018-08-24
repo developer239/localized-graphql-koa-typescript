@@ -11,19 +11,17 @@ import routerMiddleware from '~/router'
 export const createServer = (middlewares: Koa.Middleware[]) =>
   new Koa().use(compose(middlewares))
 
-const composedMiddlewares = [
+const app = createServer([
+  ...[
+    process.env.NODE_ENV === 'production'
+      ? enforceHttps({
+        trustProtoHeader: true,
+      })
+      : null,
+  ].filter(value => value),
   koaBody(),
   routerMiddleware,
-]
-
-/* istanbul ignore if  */
-if (process.env.NODE_ENV === 'production') {
-  composedMiddlewares.push(enforceHttps({
-    trustProtoHeader: true,
-  }))
-}
-
-const app = createServer(composedMiddlewares)
+])
 
 /* istanbul ignore if  */
 if (!module.parent) {

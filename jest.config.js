@@ -1,5 +1,5 @@
 module.exports = {
-  "setupTestFrameworkScriptFile": "<rootDir>/__tests__/_utils/init.ts",
+  'setupTestFrameworkScriptFile': '<rootDir>/__tests__/_utils/init.ts',
   'moduleFileExtensions': ['js', 'jsx', 'json', 'ts', 'tsx'],
   'verbose': true,
   'collectCoverage': false,
@@ -25,10 +25,7 @@ module.exports = {
       'statements': 80,
     },
   },
-  'coverageReporters': [
-    'text',
-    'text-summary',
-  ],
+  'coverageReporters': ['json', 'lcov', 'text'],
   'testRegex': '\\.test\\.(js|ts)x?$',
   'testPathIgnorePatterns': [
     '/node_modules/',
@@ -37,11 +34,11 @@ module.exports = {
   ],
   'moduleDirectories': [
     'node_modules',
-    'src'
+    'src',
   ],
-  "moduleNameMapper": {
-    "^~/(.*)$": "<rootDir>/src/$1",
-    "^~test/(.*)$": "<rootDir>/__tests__/$1",
-    "^~mock/(.*)$": "<rootDir>/__mocks__/$1"
-  }
-};
+  'moduleNameMapper': {
+    '^~/(.*)$': '<rootDir>/src/$1',
+    '^~test/(.*)$': '<rootDir>/__tests__/$1',
+    '^~mock/(.*)$': '<rootDir>/__mocks__/$1',
+  },
+}

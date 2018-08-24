@@ -1,5 +1,3 @@
-[![CircleCI](https://circleci.com/gh/developer239/localized-graphql-koa-typescript.svg?style=svg)](https://circleci.com/gh/developer239/localized-graphql-koa-typescript) <a href="https://codeclimate.com/github/developer239/localized-graphql-koa-typescript/maintainability"><img src="https://api.codeclimate.com/v1/badges/fbebbe4d9b9503c0b4b6/maintainability" /></a>
-
 # Localized GraphQl Koa TypeScript
 
 Example boilerplate for you next GraphQl NodeJs server. Part of the project setup is from [petrhanak/backend-typescript-boilerplate](https://github.com/petrhanak/backend-typescript-boilerplate).

@@ -38,6 +38,7 @@
     "koa-bodyparser": "^4.2.0",
     "koa-compose": "^4.0.0",
     "koa-router": "^7.4.0",
+    "koa-sslify": "^2.1.2",
     "objection": "^1.0.1",
     "pg": "^7.4.1",
     "ramda": "^0.25.0",

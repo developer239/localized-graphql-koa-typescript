@@ -84,7 +84,7 @@
     "prettier": "1.14.2",
     "sinon": "6.3.4",
     "supertest": "3.3.0",
-    "ts-jest": "23.1.4",
+    "ts-jest": "23.10.0",
     "ts-node": "7.0.1",
     "tslint": "5.11.0",
     "tslint-config-prettier": "1.15.0",

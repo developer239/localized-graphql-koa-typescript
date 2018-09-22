@@ -70,7 +70,7 @@
     "@types/koa-bodyparser": "5.0.1",
     "@types/koa-compose": "3.2.2",
     "@types/koa-router": "7.0.32",
-    "@types/node": "10.10.2",
+    "@types/node": "10.10.3",
     "@types/ramda": "0.25.38",
     "@types/sinon": "5.0.2",
     "@types/supertest": "2.0.6",

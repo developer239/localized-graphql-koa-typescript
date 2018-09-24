@@ -62,7 +62,7 @@
     "@babel/preset-typescript": "7.1.0",
     "@types/dotenv": "4.0.3",
     "@types/faker": "4.1.4",
-    "@types/graphql": "14.0.0",
+    "@types/graphql": "14.0.1",
     "@types/ip": "0.0.31",
     "@types/jest": "23.3.2",
     "@types/knex": "0.14.24",

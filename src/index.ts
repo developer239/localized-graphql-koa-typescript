@@ -12,13 +12,11 @@ export const createServer = (middlewares: Koa.Middleware[]) =>
   new Koa().use(compose(middlewares))
 
 const app = createServer([
-  ...[
-    process.env.NODE_ENV === 'production'
-      ? enforceHttps({
+  ...(process.env.NODE_ENV === 'production' ? [
+    enforceHttps({
         trustProtoHeader: true,
       })
-      : null,
-  ].filter(value => value),
+  ] : []),
   koaBody(),
   routerMiddleware,
 ])

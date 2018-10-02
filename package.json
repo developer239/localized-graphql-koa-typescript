@@ -51,8 +51,8 @@
     "uuid": "3.3.2"
   },
   "devDependencies": {
-    "@babel/cli": "7.1.1",
-    "@babel/core": "7.1.1",
+    "@babel/cli": "7.1.2",
+    "@babel/core": "7.1.2",
     "@babel/node": "7.0.0",
     "@babel/plugin-proposal-class-properties": "7.1.0",
     "@babel/plugin-proposal-json-strings": "7.0.0",
@@ -89,7 +89,7 @@
     "ts-node": "7.0.1",
     "tslint": "5.11.0",
     "tslint-config-prettier": "1.15.0",
-    "typescript": "3.0.1"
+    "typescript": "3.1.1"
   },
   "resolutions": {
     "babel-core": "7.0.0-bridge.0"

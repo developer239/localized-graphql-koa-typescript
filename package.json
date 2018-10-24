@@ -44,7 +44,7 @@
     "koa-compose": "4.1.0",
     "koa-router": "7.4.0",
     "koa-sslify": "2.1.2",
-    "objection": "1.3.0",
+    "objection": "1.4.0",
     "pg": "7.5.0",
     "ramda": "0.25.0",
     "slugify": "1.3.1",

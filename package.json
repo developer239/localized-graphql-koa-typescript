@@ -72,7 +72,7 @@
     "@types/koa-router": "7.0.32",
     "@types/koa-sslify": "^2.1.0",
     "@types/node": "10.12.0",
-    "@types/ramda": "0.25.38",
+    "@types/ramda": "0.25.40",
     "@types/sinon": "5.0.5",
     "@types/supertest": "2.0.6",
     "@types/uuid": "3.4.4",

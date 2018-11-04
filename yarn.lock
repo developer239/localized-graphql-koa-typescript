@@ -762,9 +762,9 @@
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/@types/http-assert/-/http-assert-1.3.0.tgz#5e932606153da28e1d04f9043f4912cf61fd55dd"
 
-"@types/ip@0.0.31":
-  version "0.0.31"
-  resolved "https://registry.yarnpkg.com/@types/ip/-/ip-0.0.31.tgz#a363989e72dd11bb21f932d6fe96bd6a85b2b74b"
+"@types/ip@0.0.32":
+  version "0.0.32"
+  resolved "https://registry.yarnpkg.com/@types/ip/-/ip-0.0.32.tgz#b501fd570908090de11cee98f6bf9dcc4fb6b7b5"
   dependencies:
     "@types/node" "*"
 

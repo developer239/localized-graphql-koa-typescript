@@ -60,7 +60,7 @@
     "@babel/plugin-syntax-import-meta": "7.0.0",
     "@babel/preset-env": "7.1.0",
     "@babel/preset-typescript": "7.1.0",
-    "@types/dotenv": "4.0.3",
+    "@types/dotenv": "6.1.0",
     "@types/faker": "4.1.4",
     "@types/graphql": "14.0.3",
     "@types/ip": "0.0.32",

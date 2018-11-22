@@ -3,10 +3,13 @@ import sinon from 'sinon'
 import uuid from 'uuid'
 import graphqlError from '~/services/graphqlError'
 
+// TODO: Fix failing sinon type
+const stub = sinon.stub(uuid, 'v4').returns(('fakeId' as any))
+
 describe('[service] Error', () => {
   afterAll(() => {
     (console.error as any).restore()
-    (uuid.v4 as any).restore()
+    stub.restore();
   })
 
   describe('graphqlError', () => {
@@ -18,7 +21,6 @@ describe('[service] Error', () => {
 
     test('it handles Error', async () => {
       const consoleLogMock = sinon.stub(global.console, 'error')
-      sinon.stub(uuid, 'v4').returns('fakeId')
 
       const mockError = { message: 'some message' }
 

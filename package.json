@@ -35,7 +35,7 @@
     "dotenv": "6.1.0",
     "graphql": "14.0.2",
     "graphql-errors": "2.1.0",
-    "graphql-playground-middleware-koa": "1.6.7",
+    "graphql-playground-middleware-koa": "1.6.8",
     "graphql-tools": "4.0.3",
     "ip": "1.1.5",
     "knex": "0.15.2",

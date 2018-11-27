@@ -38,7 +38,7 @@
     "graphql-playground-middleware-koa": "1.6.8",
     "graphql-tools": "4.0.3",
     "ip": "1.1.5",
-    "knex": "0.15.2",
+    "knex": "0.16.0",
     "koa": "2.6.2",
     "koa-bodyparser": "4.2.1",
     "koa-compose": "4.1.0",

@@ -71,7 +71,7 @@
     "@types/koa-compose": "3.2.2",
     "@types/koa-router": "7.0.35",
     "@types/koa-sslify": "^2.1.0",
-    "@types/node": "10.12.13",
+    "@types/node": "10.12.15",
     "@types/ramda": "0.25.42",
     "@types/sinon": "7.0.0",
     "@types/supertest": "2.0.7",

@@ -58,7 +58,7 @@
     "@babel/plugin-proposal-json-strings": "7.2.0",
     "@babel/plugin-syntax-dynamic-import": "7.2.0",
     "@babel/plugin-syntax-import-meta": "7.2.0",
-    "@babel/preset-env": "7.1.6",
+    "@babel/preset-env": "7.2.0",
     "@babel/preset-typescript": "7.1.0",
     "@types/dotenv": "6.1.0",
     "@types/faker": "4.1.4",

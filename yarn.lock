@@ -3774,10 +3774,10 @@ koa-router@7.4.0:
     path-to-regexp "^1.1.1"
     urijs "^1.19.0"
 
-koa-sslify@3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/koa-sslify/-/koa-sslify-3.0.0.tgz#aefbc777aa453822085824a58602b37a528b0c2b"
-  integrity sha512-j7YftJee8EN/Q4r8XPbY/7i3TyC6TpU0dxqEFXhelYJYGmoHZzvA8svSsnJHzwmjDE4rPEhKwGgljWi/MlchEA==
+koa-sslify@4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/koa-sslify/-/koa-sslify-4.0.0.tgz#1a0908b2d78d0a7796ee734aa159d7b9dfc17103"
+  integrity sha512-CmxASHGt8HInW55A5K4uSSSOojs8bHLenWRAe3F2tp3/qyW8brtnTXqm5WHlAOI7VSdmW/nyxfIx8lIbHU0dGQ==
 
 koa@2.6.2:
   version "2.6.2"

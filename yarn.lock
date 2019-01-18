@@ -953,10 +953,10 @@
   version "3.2.2"
   resolved "https://registry.yarnpkg.com/@types/koa-compose/-/koa-compose-3.2.2.tgz#dc106e000bbf92a3ac900f756df47344887ee847"
 
-"@types/koa-router@7.0.36":
-  version "7.0.36"
-  resolved "https://registry.yarnpkg.com/@types/koa-router/-/koa-router-7.0.36.tgz#a66452ea65890776c1f714064bfa94c41768a237"
-  integrity sha512-uDR3o2uNPfmJfInJngpWQkl6+AcWQygs0lgYrgTDVSLQibcIDwkt3KQL5xAlmvmhA7JKitRc7rJgs6i+MJEfHw==
+"@types/koa-router@7.0.38":
+  version "7.0.38"
+  resolved "https://registry.yarnpkg.com/@types/koa-router/-/koa-router-7.0.38.tgz#75016376b8fef17619e61089e02ea0074c803e4e"
+  integrity sha512-HIpCYSfhW2T/IXn+/3SwEAmu8UM4iT9CL00YHkY62c9/S6W2QochpaZOllBMKynCHHIhoHiJ3bMN0UWgB904rg==
   dependencies:
     "@types/koa" "*"
 

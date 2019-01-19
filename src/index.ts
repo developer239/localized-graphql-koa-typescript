@@ -16,7 +16,7 @@ const app = createServer([
     enforceHttps({
         trustProtoHeader: true,
       })
-  ] : []),
+  ] : []) as any,
   koaBody(),
   routerMiddleware,
 ])

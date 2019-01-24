@@ -5,6 +5,14 @@ log = @echo "[make] $(1)"
 
 exec = docker exec -it $(CONTAINER_NAME) sh -c $(1)
 
+infra:
+	$(call log, "Starting docker containers")
+	docker-compose up -d
+
+enter:
+	$(call log, "Entering container terminal")
+	docker exec -it $(CONTAINER_NAME) sh
+
 enter:
 	$(call log, "Entering container terminal")
 	docker exec -it $(CONTAINER_NAME) sh
@@ -50,6 +58,7 @@ test-coverage:
 	$(call exec, "NODE_ENV=test yarn test:coverage")
 
 rules := \
+	infra \
 	enter \
 	node_modules \
 	build \

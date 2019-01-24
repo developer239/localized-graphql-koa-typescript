@@ -71,7 +71,7 @@
     "@types/koa-bodyparser": "5.0.2",
     "@types/koa-compose": "3.2.2",
     "@types/koa-router": "7.0.38",
-    "@types/koa-sslify": "^2.1.0",
+    "@types/koa-sslify": "2.1.0",
     "@types/node": "10.12.18",
     "@types/ramda": "0.25.47",
     "@types/sinon": "7.0.4",

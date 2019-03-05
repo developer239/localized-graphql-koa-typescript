@@ -1106,10 +1106,10 @@
     "@types/express-serve-static-core" "*"
     "@types/mime" "*"
 
-"@types/sinon@7.0.7":
-  version "7.0.7"
-  resolved "https://registry.yarnpkg.com/@types/sinon/-/sinon-7.0.7.tgz#aa1395119ec58a836937e44b7de9e3c1c5febcf9"
-  integrity sha512-32LEm2WrFnfgWVsE2qoJHL31mf25JdVlO/SMaAPu5EpJA/TYPUH9WNQy7xJaFltAOz+djOuJjaLaGrH3fvse3A==
+"@types/sinon@7.0.9":
+  version "7.0.9"
+  resolved "https://registry.yarnpkg.com/@types/sinon/-/sinon-7.0.9.tgz#981593ea396a4fb1b69e3d8ba04de0a420fd4b16"
+  integrity sha512-PS102Fj4BAa9B8C0qLp677UiW9sdI+9ZhsD6GdPbcNKNdymyKKRJ1Bsc5Uk5pQV7jTtLozTQdxzgnQx+aH8Pvg==
 
 "@types/superagent@*":
   version "3.8.3"

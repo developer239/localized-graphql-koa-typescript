@@ -1090,10 +1090,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-11.9.1.tgz#38fd4be2e0f1b1b94e713599afc43f4b2343c61e"
   integrity sha512-XJHvu7fvycZ7ORTyThXiKCtld+R4Y1GGerYRrVSf/GhaNahRBIf/Nx+7Xh3AvI5nudOVt/L671CxHGkJt1/+hQ==
 
-"@types/ramda@0.25.50":
-  version "0.25.50"
-  resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.25.50.tgz#7f21d47c650f85b8a61c2b608adf8aa0f1a8fccf"
-  integrity sha512-hkGWVWyPEXkXSh7rxJIGg6ELG1/WlR2BB8JemZW8v2l50bfMUw6CjrETJpgd9i3jUxaxOE/X57DvclWd9wkZhg==
+"@types/ramda@0.26.3":
+  version "0.26.3"
+  resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.26.3.tgz#e6c35cb0a75843c9cfe58e0be294ffbc4480f33e"
+  integrity sha512-ZTepXW1dgQySkTUbxb2JC61vJxnLqofq4S43rFWpobRRsDh9HgNQxjEWhjQcjoYAMhkyV8JsE9mhE7Pgo3AYbg==
 
 "@types/range-parser@*":
   version "1.2.2"
